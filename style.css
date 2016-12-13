@@ -12,12 +12,12 @@ header {
 	background-size: cover;
 	padding: 135px 20px 90px;
 }
-	header h2 {
+	header h1, h2 {
 		font-size: 3.75em;
 		font-family: 'Raleway', sans-serif;
 		margin-bottom: 20px;
 	}
-	header h3 {
+	header h2 {
 		font-size: 1.125em;
 		font-style: italic;
 		margin-bottom: 50px;
@@ -58,7 +58,13 @@ article {
 	margin: 50px auto;
 	padding: 0 20px;
 }
-	article h1 {
+	h2 {
+		text-align: center;
+		margin-top: 1em;
+		font-weight: bold;
+		filter: drop-shadow(2px 2px 2px #ae2c52);
+	}
+	article h3 {
 		font-size: 3em;
 		text-align: center;
 		margin-bottom: 20px;
@@ -70,7 +76,35 @@ article {
 		float: left;
 		margin: 0 30px 20px 0;
 	}
-
+/*--------------------------------article------------------------------*/
+/*----------------------------------footer-----------------------------*/
+footer {
+	width: 95%;
+	height: auto;
+	margin: 10px auto;
+	padding: 5px;
+	background-image: linear-gradient(to right, #ae2c52, #555, #ae2c52, #222);
+	border-radius: 10px;
+	color: #fff;	
+}
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.container::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.social {
+		float: left;
+	}
+	.copyright {
+		float: right;
+		line-height: 30px;
+	}
+/*----------------------------------footer-----------------------------*/
+/*------------------------------media---------------------------------*/
 @media screen and (max-width: 950px) {
 	.subscribe input[type="text"], .subscribe input[type="email"] {
 		width: 260px;
@@ -85,16 +119,16 @@ article {
 	header {
 		padding: 30px 20px;
 	}
-		header h2 {
+		header h1, h2 {
 		font-size: 2.75em;
 		}
-		header h3 {
+		header h2 {
 			margin-bottom: 20px;
 		}
 	article {
 		margin: 20px auto;
 	}
-		article h1 {
+		article h3 {
 			font-size: 2em;
 		}
 		article p {
@@ -108,10 +142,10 @@ article {
 	.subscribe input[type="text"], .subscribe input[type="email"] {
 		width: 260px;
 	}
-	header h2 {
+	header h1, h2 {
 		font-size: 1.75em;
 	}
-	article h1 {
+	article h3 {
 			font-size: 1.3em;
 		}
 	article p {
